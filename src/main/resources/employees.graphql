@@ -1,0 +1,20 @@
+schema {
+	query: Query
+}
+
+type Query{
+	allEmployees : [Employee]
+	employee(id:String) : Employee
+}
+
+type Employee{
+	empId:String
+	title:String
+	firstName:String
+	lastName:String
+	addressLine1:String
+	addressLine2:String
+	city:String
+	stateCode:String
+	zipCope:String
+}
